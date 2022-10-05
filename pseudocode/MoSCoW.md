@@ -9,6 +9,7 @@
 
     * the game continues until 3 tiles in a row, col, diagonal, or all tiles are filled.
 
+    * 3X3 game board
 
 ------ Should Have -----
 
