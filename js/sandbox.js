@@ -17,6 +17,7 @@ container.setAttribute("class", "container")
 document.getElementById("app").appendChild(container)
 
 
+for (var i = 0; i < 3; i++) {
 
 let row = document.createElement ("div")
 row.setAttribute("class", "row")
@@ -35,9 +36,21 @@ col3.setAttribute("class", "col");
 row.appendChild(col3);
 
 
-let buttonInput = document.createElement("button");
-buttonInput.setAttribute("type", "submit");
-buttonInput.setAttribute("id", "btn")
-buttonInput.setAttribute("class", "btn btn-primary mb-2");
-buttonInput.innerText = "tic tac toe";
-col1.appendChild(buttonInput);
+let buttonInput1 = document.createElement("button");
+buttonInput1.setAttribute("id", "btn")
+buttonInput1.setAttribute("class", "btn btn-primary mb-2");
+buttonInput1.innerText = "tic tac toe";
+col1.appendChild(buttonInput1);
+
+let buttonInput2 = document.createElement("button");
+buttonInput2.setAttribute("id", "btn")
+buttonInput2.setAttribute("class", "btn btn-primary mb-2");
+buttonInput2.innerText = "tic tac toe";
+col2.appendChild(buttonInput2);
+
+let buttonInput3 = document.createElement("button");
+buttonInput3.setAttribute("id", "btn")
+buttonInput3.setAttribute("class", "btn btn-primary mb-2");
+buttonInput3.innerText = "tic tac toe";
+col3.appendChild(buttonInput3);
+}
