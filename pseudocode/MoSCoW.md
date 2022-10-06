@@ -17,7 +17,7 @@
 
     * pop-up that declares who the winner is or a draw
 
-    *only have a single <div id="app"></div>
+    * only have a single <div id="app"></div>
 
 ------- Could Have -----
 
