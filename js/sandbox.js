@@ -1,6 +1,6 @@
 
 
-let boardState = [
+/*let boardState = [
     'X','O','X',
     'X','X','O',
     '','','',
@@ -14,7 +14,7 @@ let winConditions = [
     [2,5,8],
     [0,4,8],
     [6,4,2]
-];
+];*/
 
 let container = document.createElement ("container");
 container.setAttribute("class", "container text-center");
@@ -42,28 +42,69 @@ const buttonId = ["a1", "a2", "a3", "b1", "b2", "b3", "c1", "c2", "c3"];
 let btnSomething = buttonId[3*i+j];
 
 let buttonInput1 = document.createElement("button");
-buttonInput1.setAttribute("id", "btn");
 buttonInput1.setAttribute("class", "btn btn-primary mb-2");
-buttonInput1.innerText = btnSomething;
+buttonInput1.innerText = "";
 buttonInput1.setAttribute("id", btnSomething);
 col1.appendChild(buttonInput1);
 
+// 
+var whosTurn = "X";
+console.log(btnSomething)
+    
+function myFunction(pushedButton) {
 
-//var whosTurn = "X";
+    let btnPush = document.getElementById(pushButton)
 
-/*function myFunction() {
-
-    if (btnSomething.innerHTML != "") {
+    if (btnPush.innerHTML != "") {
         return;
     }
 
-    btnSomething.innerHTML = whosTurn;
+    btnPush.innerHTML = whosTurn;
 
     if ((document.getElementById ("a1").innerHTML == whosTurn)
      && (document.getElementById ("a2").innerHTML == whosTurn)
       && (document.getElementById("a3").innerHTML == whosTurn)) {
         console.log ("Winner: " + " " + whosTurn);
- 
+        
+    } else if ((document.getElementById ("b1").innerHTML == whosTurn)
+    && (document.getElementById ("b2").innerHTML == whosTurn) 
+    && (document.getElementById("b3").innerHTML == whosTurn)) {
+      console.log ("Winner" + " " + whosTurn);
+       
+
+   } else if ((document.getElementById ("c1").innerHTML == whosTurn) 
+   && (document.getElementById ("c2").innerHTML == whosTurn) 
+   && (document.getElementById("c3").innerHTML == whosTurn)) {
+       console.log ("Winner" + " " + whosTurn);
+        
+
+    } else if ((document.getElementById ("a1").innerHTML == whosTurn) 
+    && (document.getElementById ("b1").innerHTML == whosTurn) 
+    && (document.getElementById("c1").innerHTML == whosTurn)) {
+       console.log ("Winner" + " " + whosTurn);
+        
+
+    } else if ((document.getElementById ("a2").innerHTML == whosTurn) 
+    && (document.getElementById ("b2").innerHTML == whosTurn) 
+    && (document.getElementById("c2").innerHTML == whosTurn)) {
+       console.log ("Winner" + " " + whosTurn);
+        
+
+    } else if ((document.getElementById ("a3").innerHTML == whosTurn) 
+    && (document.getElementById ("b3").innerHTML == whosTurn) 
+    && (document.getElementById("c3").innerHTML == whosTurn)) {
+       console.log ("Winner" + " " + whosTurn);
+        
+    }else if ((document.getElementById ("a1").innerHTML == whosTurn) 
+    && (document.getElementById ("b2").innerHTML == whosTurn) 
+    && (document.getElementById("c3").innerHTML == whosTurn)) {
+       console.log ("Winner" + " " + whosTurn);
+        
+
+    } else if ((document.getElementById ("a3").innerHTML == whosTurn)
+     && (document.getElementById ("b2").innerHTML == whosTurn) && (document.getElementById("c1").innerHTML == whosTurn)) {
+       console.log ("Winner" + " " + whosTurn);
+        
      } else  {
          console.log ("Draw")
      }
@@ -75,12 +116,14 @@ col1.appendChild(buttonInput1);
         whosTurn = "X"
     }
 
-
-    document.getElementById("btnSomething").innerHTML = whosTurn;
+//onclick should populate x
     
+   onclick.document.getElementById("btnSomething").innerHTML = whosTurn;
   }
  }
-}
-*/
- }
-}
+} 
+
+
+
+
+ 
