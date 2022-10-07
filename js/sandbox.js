@@ -51,7 +51,7 @@ col1.appendChild(buttonInput1);
 var whosTurn = "X";
 console.log(btnSomething)
     
-function myFunction(pushedButton) {
+function getGame(pushedButton) {
 
     let btnPush = document.getElementById(pushButton)
 
