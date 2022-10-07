@@ -1,18 +1,4 @@
-/*let boardState = [
-    'X','O','X',
-    'X','X','O',
-    '','','',
-];
-let winConditions = [
-    [0,1,2],
-    [3,4,5],
-    [6,7,8],
-    [0,3,8],
-    [1,4,7],
-    [2,5,8],
-    [0,4,8],
-    [6,4,2]
-];*/
+
 
 let container = document.createElement("container");
 container.setAttribute("class", "container text-center");
@@ -20,8 +6,6 @@ document.getElementById("app").appendChild(container);
 
 
 for (var i = 0; i < 3; i++) {
-
-
 
     let row = document.createElement("div")
     row.setAttribute("class", "row")
@@ -44,7 +28,7 @@ for (var i = 0; i < 3; i++) {
         buttonInput1.addEventListener("click", clickHandler)
         buttonInput1.innerText = "";
         buttonInput1.setAttribute("id", btnSomething);
-        col1.appendChild(buttonInput1); 
+        col1.appendChild(buttonInput1);
 
     }
     // 
@@ -63,49 +47,49 @@ for (var i = 0; i < 3; i++) {
         if ((document.getElementById("a1").innerHTML == whosTurn) &&
             (document.getElementById("a2").innerHTML == whosTurn) &&
             (document.getElementById("a3").innerHTML == whosTurn)) {
-            //console.log("Winner: " + " " + whosTurn);
+            window.confirm("Winner: " + " " + whosTurn);
 
         } else if ((document.getElementById("b1").innerHTML == whosTurn) &&
             (document.getElementById("b2").innerHTML == whosTurn) &&
             (document.getElementById("b3").innerHTML == whosTurn)) {
-            console.log("Winner" + " " + whosTurn);
+            window.confirm("Winner" + " " + whosTurn);
 
 
         } else if ((document.getElementById("c1").innerHTML == whosTurn) &&
             (document.getElementById("c2").innerHTML == whosTurn) &&
             (document.getElementById("c3").innerHTML == whosTurn)) {
-            console.log("Winner" + " " + whosTurn);
+            window.confirm("Winner" + " " + whosTurn);
 
 
         } else if ((document.getElementById("a1").innerHTML == whosTurn) &&
             (document.getElementById("b1").innerHTML == whosTurn) &&
             (document.getElementById("c1").innerHTML == whosTurn)) {
-            console.log("Winner" + " " + whosTurn);
+            window.confirm("Winner" + " " + whosTurn);
 
 
         } else if ((document.getElementById("a2").innerHTML == whosTurn) &&
             (document.getElementById("b2").innerHTML == whosTurn) &&
             (document.getElementById("c2").innerHTML == whosTurn)) {
-            console.log("Winner" + " " + whosTurn);
+            window.confirm("Winner" + " " + whosTurn);
 
 
         } else if ((document.getElementById("a3").innerHTML == whosTurn) &&
             (document.getElementById("b3").innerHTML == whosTurn) &&
             (document.getElementById("c3").innerHTML == whosTurn)) {
-            console.log("Winner" + " " + whosTurn);
+            window.confirm("Winner" + " " + whosTurn);
 
         } else if ((document.getElementById("a1").innerHTML == whosTurn) &&
             (document.getElementById("b2").innerHTML == whosTurn) &&
             (document.getElementById("c3").innerHTML == whosTurn)) {
-            console.log("Winner" + " " + whosTurn);
+            window.confirm("Winner" + " " + whosTurn);
 
 
         } else if ((document.getElementById("a3").innerHTML == whosTurn) &&
             (document.getElementById("b2").innerHTML == whosTurn) && (document.getElementById("c1").innerHTML == whosTurn)) {
-            console.log("Winner" + " " + whosTurn);
+            window.confirm("Winner" + " " + whosTurn);
 
         } else {
-            console.log("Draw")
+                console.log("Draw")
         }
 
         // when whos turn is x next action is O
@@ -116,8 +100,8 @@ for (var i = 0; i < 3; i++) {
         }
 
         //onclick should populate x
-        
 
-       // onclick.document.getElementById("btnSomething").innerHTML = whosTurn;
+
+        // onclick.document.getElementById("btnSomething").innerHTML = whosTurn;
     }
 }
