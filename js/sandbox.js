@@ -37,7 +37,8 @@ for (var i = 0; i < 3; i++) {
     row.appendChild(col1);
     
 
-const buttonId = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+const buttonId = ["a1", "a2", "a3", "b1", "b2", "b3", "c1", "c2", "c3"];
+
 let btnsomething = buttonId[3*i+j];
 
 let buttonInput1 = document.createElement("button");
